@@ -1,9 +1,9 @@
 ﻿using System;
 using tyuiu.cources.programming.interfaces.Sprint2;
 using Tyuiu.ShahabAJ2.Sprint2.Task7;
-namespace Tyuiu.ShahabAJ2.Sprint2.Task7.V1.Lib
+namespace Tyuiu.ShahabAJ2.Sprint2.Task7.V25.Lib
 {
-    public class DataService : ISprint2Task2V6
+    public class DataService : ISprint2Task2V25
     {
         public bool CheckDotInShadedArea(double x, double y)
         {

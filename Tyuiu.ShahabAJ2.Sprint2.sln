@@ -21,11 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Spint2.Task
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{2CEE866C-BAE9-428E-8427-981965B09053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Sprint2.Task2.V6", "Tyuiu.ShahabAJ2.Sprint2.Task2.V6\Tyuiu.ShahabAJ2.Sprint2.Task2.V6.csproj", "{D7E2A48E-697E-4FBC-86FB-6C47A2461B88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Sprint2.Task2.V25", "Tyuiu.ShahabAJ2.Sprint2.Task2.V6\Tyuiu.ShahabAJ2.Sprint2.Task2.V25.csproj", "{D7E2A48E-697E-4FBC-86FB-6C47A2461B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Lib", "Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Lib\Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Lib.csproj", "{6F82580D-E14C-440F-BDA8-AB261729E630}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Sprint2.Task2.V25.Lib", "Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Lib\Tyuiu.ShahabAJ2.Sprint2.Task2.V25.Lib.csproj", "{6F82580D-E14C-440F-BDA8-AB261729E630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Test", "Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Test\Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Test.csproj", "{6E98C925-E970-4BC3-B7B4-509087F7CC89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShahabAJ2.Sprint2.Task2.V25.Test", "Tyuiu.ShahabAJ2.Sprint2.Task2.V6.Test\Tyuiu.ShahabAJ2.Sprint2.Task2.V25.Test.csproj", "{6E98C925-E970-4BC3-B7B4-509087F7CC89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

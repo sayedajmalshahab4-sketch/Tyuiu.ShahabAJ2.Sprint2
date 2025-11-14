@@ -1,8 +1,7 @@
 ﻿using System;
-using Tyuiu.ShahabAJ2.Sprint2.Task7.V1.Lib;
+using Tyuiu.ShahabAJ2.Sprint2.Task7.V25.Lib;
 
-namespace Tyuiu.ShahabAJ2.Sprint2.Task7.V1
-{
+namespace Tyuiu.ShahabAJ2.Sprint2.Task7.V25
     class Program
     {
         static void Main(string[] args)

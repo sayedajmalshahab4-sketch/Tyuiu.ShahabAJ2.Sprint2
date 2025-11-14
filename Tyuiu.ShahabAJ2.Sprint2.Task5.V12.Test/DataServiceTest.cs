@@ -11,9 +11,9 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task5.V12.Test
         {
             DataService ds = new DataService();
             int g = 2024;
-            int m = 3;
-            int n = 15;
-            string wait = "14.3.2024";
+            int m = 9;
+            int n = 8;
+            string wait = "07.09.2024";
             string result = ds.FindDateOfPreviousDay(g, m, n);
             Assert.AreEqual(wait, result);
         }
@@ -37,7 +37,19 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task5.V12.Test
             int g = 2024;
             int m = 3;
             int n = 1;
-            string wait = "29.2.2024";
+            string wait = "29.02.2024";
+            string result = ds.FindDateOfPreviousDay(g, m, n);
+            Assert.AreEqual(wait, result);
+        }
+
+        [TestMethod]
+        public void ValidFindDateOfPreviousDay4()
+        {
+            DataService ds = new DataService();
+            int g = 2023;
+            int m = 3;
+            int n = 1;
+            string wait = "28.02.2023";
             string result = ds.FindDateOfPreviousDay(g, m, n);
             Assert.AreEqual(wait, result);
         }

@@ -7,6 +7,7 @@ namespace Tyuiu.ShahabAJ2.Spint2.Task1.V30.Lib
         {
             bool[] res = new bool[6];
 
+
             // (True, False, True, True, True, False)
             res[0] = (a < b) | (c > d);           // True | False = True
             res[1] = (a == b) & (c < d);          // False & True = False

@@ -1,9 +1,9 @@
 ﻿using System;
-using tyuiu.cources.programming.interfaces.Sprint1;
 using tyuiu.cources.programming.interfaces.Sprint2;
+using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.ShahabAJ2.Sprint2.Task6.V12.Lib
 {
-    public class DataService : ISprint2Task5V12
+    public class DataService : ISprint2Task6V12
     {
         public string FindDateOfPreviousDay(int g, int m, int n)
         {

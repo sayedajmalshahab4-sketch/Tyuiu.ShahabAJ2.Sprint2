@@ -1,4 +1,6 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint2;
+
 namespace Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib
 {
     public class DataService : ISprint2Task3V12
@@ -15,7 +17,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib
             {
                 y = 1 + Math.Cos(Math.Sqrt(x + 1));
             }
-            else if (x is > (-16) and < 2)
+            else if (x > -16 && x < 2)
             {
                 if (x == 0)
                 {
@@ -23,12 +25,12 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib
                 }
                 else
                 {
-                    y = Math.Pow(7 + (5 / Math.Pow(x, 2)), x);
+                    y = Math.Pow(7 + 5 / Math.Pow(x, 2), x);
                 }
             }
             else if (x < -16)
             {
-                y = x + 10 * x - (1 / x);
+                y = x + 10 * x - 1 / x;
             }
             else
             {

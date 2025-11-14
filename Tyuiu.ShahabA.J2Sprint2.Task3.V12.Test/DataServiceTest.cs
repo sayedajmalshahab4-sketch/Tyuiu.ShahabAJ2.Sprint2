@@ -1,29 +1,49 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib;
 
-namespace Tyuiu.ShahabAJ2.J2Sprint2.Task3.V12.Test;
-
-class Program
+namespace Tyuiu.ShahabA.Sprint2.Task3.V12.Test
 {
-    static void Main(string[] args)
+    [TestClass]
+    public class DataServiceTest
     {
-        DataService ds = new DataService();
+        [TestMethod]
+        public void ValidCalculate1()
+        {
+            DataService ds = new DataService();
+            double x = 2;
+            double wait = 4.444; // x > 1
+            double result = ds.Calculate(x);
+            Assert.AreEqual(wait, result);
+        }
 
-        Console.WriteLine("*************************");
-        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-        Console.WriteLine("*************************");
+        [TestMethod]
+        public void ValidCalculate2()
+        {
+            DataService ds = new DataService();
+            double x = 0;
+            double wait = 1.540; // x == 0
+            double result = ds.Calculate(x);
+            Assert.AreEqual(wait, result);
+        }
 
-        Console.Write("Введите значение X: ");
-        double x = Convert.ToDouble(Console.ReadLine());
+        [TestMethod]
+        public void ValidCalculate3()
+        {
+            DataService ds = new DataService();
+            double x = -10;
+            double wait = 0.001; // -16 < x < 2
+            double result = ds.Calculate(x);
+            Assert.AreEqual(wait, result, 0.001);
+        }
 
-        Console.WriteLine();
-        Console.WriteLine("*************************");
-        Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
-        Console.WriteLine("*************************");
-
-        double result = ds.Calculate(x);
-        Console.WriteLine($"Значение Y = {result}");
-
-        Console.ReadKey();
+        [TestMethod]
+        public void ValidCalculate4()
+        {
+            DataService ds = new DataService();
+            double x = -20;
+            double wait = -219.95; // x < -16
+            double result = ds.Calculate(x);
+            Assert.AreEqual(wait, result);
+        }
     }
 }

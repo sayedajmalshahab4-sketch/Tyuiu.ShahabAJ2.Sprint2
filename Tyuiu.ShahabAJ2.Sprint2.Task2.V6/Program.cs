@@ -12,7 +12,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task7.V1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            
             Console.Write("Введите координату X: ");
             double x = Convert.ToDouble(Console.ReadLine());
 

@@ -15,7 +15,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib
             {
                 y = 1 + Math.Cos(Math.Sqrt(x + 1));
             }
-            else if (x > -16 && x < 2)
+            else if (x is > (-16) and < 2)
             {
                 if (x == 0)
                 {

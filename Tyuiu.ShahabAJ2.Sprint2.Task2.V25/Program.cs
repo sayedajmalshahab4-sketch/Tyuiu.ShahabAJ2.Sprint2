@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.ShahabA.Sprint2.Task2.V25.Lib;
+using Tyuiu.ShahabAJ2.Sprint2.Task2.V25.Lib;
 
-namespace Tyuiu.ShahabA.Sprint2.Task2.V25
+namespace Tyuiu.ShahabAJ2.Sprint2.Task2.V25
 {
     class Program
     {

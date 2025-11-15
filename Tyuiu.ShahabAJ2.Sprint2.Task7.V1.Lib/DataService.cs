@@ -19,7 +19,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task7.V1.Lib
                 return true;
             }
 
-            return false;
+            return true;
         }
     }
 }

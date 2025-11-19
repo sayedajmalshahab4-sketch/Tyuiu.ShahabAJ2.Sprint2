@@ -1,22 +1,27 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
-namespace Tyuiu.ShahabAJ2.Spint2.Task1.V30.Lib
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint2;
+namespace Tyuiu.Shahab4.Sprint2.Task1.V30.Lib
 {
     public class DataService : ISprint2Task1V30
     {
+        public bool[] GetCompareOperations(int a, int b, int c, int d)
+        {
+            bool[] result = new bool[6];
+
+            // Используем все операции сравнения и логические операции
+            result[0] = (a > b) & (c != d);
+            result[1] = (a <= c) | (b == d);
+            result[2] = (c < d) ^ (a >= b);
+            result[3] = (b != a) && (d > c);
+            result[4] = (a == d) || (b < c);
+            result[5] = !(c >= a) & (d <= b);
+
+            return result;
+        }
+
         public bool[] GetLogicOperations(int a, int b, int c, int d)
         {
-            bool[] res = new bool[6];
-
-
-            // (True, False, True, True, True, False)
-            res[0] = (a < b) | (c > d);           // True | False = True
-            res[1] = (a == b) & (c < d);          // False & True = False
-            res[2] = (a != b) || (c <= d);        // True || True = True
-            res[3] = (a < b) && (c != d);         // True && True = True
-            res[4] = !(a >= b);                   // !False = True
-            res[5] = (a <= b) & (c == d);         // True & False = False
-
-            return res;
+            throw new NotImplementedException();
         }
     }
 }

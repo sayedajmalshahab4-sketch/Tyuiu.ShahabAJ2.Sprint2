@@ -1,12 +1,26 @@
-﻿using Tyuiu.ShahabAJ2.Spint2.Task1.V30.Lib; 
-namespace Tyuiu.ShahabAJ2.Spint2.Task1.V30
+﻿using System;
+using Tyuiu.Shahab4.Sprint2.Task1.V30.Lib;
+
+namespace Tyuiu.Shahab4.Sprint2.Task1.V30
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
 
+            Console.Title = "Спринт #5 | Выполнил: Шахаб А. | АСОиУБ-23-1";
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #5                                                               *");
+            Console.WriteLine("* Тема: Операции сравнения и логические операции                         *");
+            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Вариант #30                                                             *");
+            Console.WriteLine("* Выполнил: Шахаб А. | АСОиУБ-23-1                                       *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Написать программу из операций сравнений и логических операций,        *");
+            Console.WriteLine("* которая вернет логическую последовательность (True, False, True,       *");
+            Console.WriteLine("* True, True, False), при a = 657, b = 874, c = 14, d = 654              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -16,31 +30,22 @@ namespace Tyuiu.ShahabAJ2.Spint2.Task1.V30
             int c = 14;
             int d = 654;
 
-            Console.WriteLine($"A = {a}");
-            Console.WriteLine($"B = {b}");
-            Console.WriteLine($"C = {c}");
-            Console.WriteLine($"D = {d}");
+            Console.WriteLine($"a = {a}");
+            Console.WriteLine($"b = {b}");
+            Console.WriteLine($"c = {c}");
+            Console.WriteLine($"d = {d}");
 
             Console.WriteLine();
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("***************************************************************************");
 
-            bool[] results = ds.GetLogicOperations(a, b, c, d);
+            bool[] result = ds.GetCompareOperations(a, b, c, d);
 
-            Console.WriteLine("Результаты логических операций:");
-            string[] operations = {
-                "(A < B) | (C > D)",
-                "(A == B) & (C < D)",
-                "(A != B) || (C <= D)",
-                "(A < B) && (C != D)",
-                "!(A >= B)",
-                "(A <= B) & (C == D)"
-            };
-
-            for (int i = 0; i < results.Length; i++)
+            Console.WriteLine("Логическая последовательность:");
+            for (int i = 0; i < result.Length; i++)
             {
-                Console.WriteLine($"{operations[i]} = {results[i]}");
+                Console.WriteLine($"[{i}] = {result[i]}");
             }
 
             Console.ReadKey();

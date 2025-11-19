@@ -1,11 +1,13 @@
-﻿using Tyuiu.ShahabAJ2.Spint2.Task1.V30.Lib;
-namespace Tyuiu.ShahabAJ2.Spint2.Task1.V30.Test
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.Shahab4.Sprint2.Task1.V30.Lib;
+
+namespace Tyuiu.Shahab4.Sprint2.Task1.V30.Test
 {
     [TestClass]
-    public sealed class DataServiceTest
+    public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetCompareOperations()
         {
             DataService ds = new DataService();
             int a = 657;
@@ -13,7 +15,7 @@ namespace Tyuiu.ShahabAJ2.Spint2.Task1.V30.Test
             int c = 14;
             int d = 654;
             bool[] wait = { true, false, true, true, true, false };
-            bool[] result = ds.GetLogicOperations(a, b, c, d);
+            bool[] result = ds.GetCompareOperations(a, b, c, d);
             CollectionAssert.AreEqual(wait, result);
         }
     }

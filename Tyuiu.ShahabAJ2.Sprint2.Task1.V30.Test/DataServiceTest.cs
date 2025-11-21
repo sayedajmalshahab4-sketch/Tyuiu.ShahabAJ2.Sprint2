@@ -10,7 +10,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task1.V30.Test
         public void ValidGetLogicOperations()
         {
             DataService ds = new DataService();
-
+             
             int a = 657;
             int b = 874;
             int c = 14;

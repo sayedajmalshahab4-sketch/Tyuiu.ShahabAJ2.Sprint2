@@ -2,8 +2,12 @@
 using tyuiu.cources.programming.interfaces.Sprint2;
 namespace Tyuiu.ShahabAJ2.Sprint2.Task1.V30.Lib
 {
-    public class DataService
+    public class DataService : ISprint2Task1V30
     {
+        public DataService()
+        {
+        }
+
         public bool[] GetLogicOperations(int a, int b, int c, int d)
         {
             bool[] result = new bool[6];

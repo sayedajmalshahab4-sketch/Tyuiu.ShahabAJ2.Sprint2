@@ -3,7 +3,7 @@ using tyuiu.cources.programming.interfaces.Sprint2;
 namespace Tyuiu.ShahabAJ2.Sprint2.Task1.V30.Lib
 {
     public class DataService : ISprint2Task1V30
-    {
+    { 
         public DataService()
         {
         }
@@ -12,7 +12,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task1.V30.Lib
         {
             bool[] result = new bool[6];
 
-            // Используем все требуемые операции сравнения и логические операции
+            // Используем все требуемые операции сравнения и логические операции 
             result[0] = (a < b) & (c != d);           // <, !=, &
             result[1] = (a > b) | (c == d);           // >, ==, |
             result[2] = (a <= b) && (c < d);          // <=, <, &&

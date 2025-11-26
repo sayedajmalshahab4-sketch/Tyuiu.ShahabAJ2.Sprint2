@@ -16,7 +16,7 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task1.V30.Lib
             result[0] = (a < b) & (c != d);           // <, !=, &
             result[1] = (a > b) | (c == d);           // >, ==, |
             result[2] = (a <= b) && (c < d);          // <=, <, &&
-            result[3] = (a >= c) || (b > d);          // >=, >, ||
+            result[3] = (a >= c) || (b > d);          // >=, >, ||kr
             result[4] = (a != b) ^ (c <= d);          // !=, <=, ^
             result[5] = !(a > c) & (b == d);          // !, >, ==, &
 

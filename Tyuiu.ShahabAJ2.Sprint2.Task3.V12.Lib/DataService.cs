@@ -5,6 +5,10 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib
 {
     public class DataService : ISprint2Task3V12
     {
+        public DataService()
+        {
+        }
+
         public double Calculate(double x)
         {
             double y;
@@ -15,26 +19,19 @@ namespace Tyuiu.ShahabAJ2.Sprint2.Task3.V12.Lib
             }
             else if (x == 0)
             {
-                y = 1 + Math.Cos(Math.Sqrt(x + 1));
+                y = Math.Pow(x, 2) - Math.Cos(Math.Pow(x, 2)) + 10;
             }
-            else if (x > -16 && x < 2)
+            else if (-10 <= x && x < 0)
             {
-                if (x == 0)
-                {
-                    y = 1 + Math.Cos(Math.Sqrt(x + 1));
-                }
-                else
-                {
-                    y = Math.Pow(7 + 5 / Math.Pow(x, 2), x);
-                }
+                y = Math.Pow(x, 2) - (1 / Math.Pow(x, 2));
             }
-            else if (x < -16)
+            else if (x < -10)
             {
-                y = x + 10 * x - 1 / x;
+                y = Math.Pow(x, 3) + (10 / x) - Math.Pow(x, 2);
             }
             else
             {
-                y = 0; // для x = -16 или x = 2
+                throw new ArgumentException($"Значение X = {x} не попадает в области определения функции");
             }
 
             return Math.Round(y, 3);
